@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Capstone Guide -Yassin Bassem</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/site_logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #0056b3;
+            --secondary: #6c757d;
+            --light: #ffffff;
+            --dark: #333333;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: var(--dark);
+        }
+
+        .navbar {
+            transition: .3s;
+        }
+
+        .navbar.shadow-sm {
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            padding: 25px 10px;
+            color: var(--dark);
+            font-weight: 500;
+            outline: none;
+        }
+
+        .navbar-light .navbar-nav .nav-link:hover,
+        .navbar-light .navbar-nav .nav-link.active {
+            color: var(--primary);
+        }
+
+        .header-section {
+            /* background-image: url(img/g25.jpg); */
+            background-color: #0056b3;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 80px 0;
+            color: var(--light);
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* .header-content h1{
+            color: green;
+            opacity: 100;
+        } */
+        .header-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--light);
+        }
+
+        .header-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .btn-outline-primary {
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .btn-outline-primary:hover {
+            color: var(--light);
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #333;
+        }
+        .rules, .tips, .closing {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .closing {
+            font-style: italic;
+            border-top: 2px solid #ddd;
+            padding-top: 10px;
+        }
+        a{
+            color: black;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logo3.png" alt="Logo" class="logo" >
+                <!-- <h1 class="m-0 text-2xl font-bold"><span style="color: #0984e3">Free</span>Folio</h1> -->
+            </a>
+            <div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i> <!-- Menu icon -->
+                </button>
+
+
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-link ">Home</a>
+                        <a href="hazemmoghni.com/about/about.html" class="nav-link ">About</a>
+                        <!-- <a href="#Quality" class="nav-link">Quality</a> -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" id="guideDropdown" data-toggle="dropdown" aria-expanded="false">
+                                Guides
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="guideDropdown">
+                                <li><a href="IRIS.html" class="dropdown-item">IRIS Guide</a></li>
+                                <li><a href="capestone.html" class="dropdown-item">STEM Capstone Guide</a></li>
+                            </ul>
+                        </div>
+                        <a href="archive.html" class="nav-link ">Archive</a>
+
+                    </div>
+                    <div class="container" style="">
+                        <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/yassinbassem/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-light btn-social mr-2" href="mailto:yassin.1922059@stemgharbiya.moe.edu.eg"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        <a class="btn btn-light btn-social mr-2" href="https://www.youtube.com/@yassinbassemf"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+
+    <section class="header-section">
+        <div class="second-container">
+            <img
+                  class="header-bg"
+                  src="img/g25.jpg"
+                  alt=""
+                >
+            <div class="header-content">
+                <h1 class="header-title">Complete Guide to Egypt STEM Schools Capstone Project</h1>
+                <p class="header-subtitle">A comprehensive guide to help students excel in their Capstone Projects</p>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section>
+            <h2>Table of Contents</h2>
+            <ul class="navbar-nav">
+                <li><a href="#backstory">1. Backstory</a></li>
+                <li><a href="#sec2">2. What is the Capstone Project?</a></li>
+                <li><a href="#sec3">3. What is the Capstone Challenge?</a></li>
+                <li><a href="#sec4">4. Constructing and Testing a Prototype</a></li>
+                <li><a href="#sec5">5. Capstone Guidelines</a></li>
+                <li><a href="#sec6">6. Grading System</a></li>
+                <li><a href="#sec7">7. Rules</a></li>
+                <li><a href="#sec8">8. Tips</a></li>
+            </ul>
+        </section>
+
+        <section id="backstory">
+            <h2>Backstory</h2>
+            <p>At my high school, every older class assists the younger one in doing their first two Capstone Projects (basically science fair projects that make up 60% of our grade), each taking a 3-4 months long semester. However, only the select best of the best (or as they're called: Capstone Assistants) would do this job.</p>
+            <p>How is this relevant? Well, for many years, Capstone Assistants depended on intuition, experience, and discussions to guide the younger class. This, of course, would result in inconsistent and sometimes even inaccurate instructions. Serving as Capstone Assistant for a year myself, I sponged up all possibly attainable knowledge and opinions about the project and ta-da!</p>
+            <p>I wrote a Complete Guide for Egypt STEM Schools Capstone Project. It's been two years since, and, so far, it has helped 70+ Capstone Assistants instruct a total of 410 students. I expect it to remain in use for another two years.</p>
+            <p>I used to keep this for my school only—feelings of loyalty and all. But I have since realized that it's unfair to withhold the most comprehensive and accurate instructions for a very important school project.</p>
+            <p>I have seen many students pay thousands in EGP to get external help from engineers. The consensus was that to maximize your mark in a project that absurdly makes up the majority of your grade, one had to buy assistance. What's even sadder is, this was true… until now: September 2024.</p>
+            <p>The guide is free for all now. Ace that project!</p>
+            <p><strong>PS:</strong> Sorry for withholding this the last 1-2 years...</p>
+        </section>
+
+        <section id="sec2">
+            <h2>What is the Capstone Project?</h2>
+            <p>The Capstone Project is a part of Egypt's STEM school's curriculum. It is one semester long; you must do a Capstone Project every semester. Students collaborate in small groups and go through the Engineering Design Process (EDP) to solve real-life problems related to Egypt's Grand Challenges. More on the Grand Challenges below.</p>
+            <p>The Capstone Project makes up 60% of all school subjects, and it is further divided into four categories:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Assessment Tool</th>
+                        <th>Evidence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Personal Journals – 40%</td>
+                        <td>Personal Journal Rubric</td>
+                        <td>Highest four of the five Personal Journals that are administered biweekly in the Capstone session.</td>
+                    </tr>
+                    <tr>
+                        <td>Prototype – 10%</td>
+                        <td>Capstone Exhibition Rubric</td>
+                        <td>Capstone Prototype</td>
+                    </tr>
+                    <tr>
+                        <td>Capstone Portfolio – 10%</td>
+                        <td>Capstone Exhibition Rubric</td>
+                        <td>Capstone Portfolio</td>
+                    </tr>
+                    <tr>
+                        <td>Capstone Exhibition Poster – 40%</td>
+                        <td>Capstone Exhibition Rubric</td>
+                        <td>Capstone Exhibition Poster</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="sec3">
+            <h2>What is the Capstone Challenge?</h2>
+            <p>The Capstone Challenge is a detailed explanation of the project you're tasked to do. It is specific to each semester. It includes:</p>
+            <ul>
+                <li>Theme: e.g., energy, matter, feedback, etc.</li>
+                <li>Recommend Grand Challenges (GCs): See the next section.</li>
+                <li>Big Idea: Detailed explanation of the idea behind the project.</li>
+                <li>Essential Question: A broad question that shows the project's purpose.</li>
+                <li>Design Challenge: Design instructions, limitations, and advice.</li>
+                <li>Design Requirements: Measurable design benchmarks you should set and aim to pass.</li>
+                <li>Constraints: Self-explanatory.</li>
+            </ul>
+
+            <p>Here is a table summarizing the Capstone Challenges of each semester:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Semester</th>
+                        <th>Theme</th>
+                        <th>GCs</th>
+                        <th>Big Idea</th>
+                        <th>Design Challenge</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Semester 1</td>
+                        <td>Matter & Materials</td>
+                        <td>3</td>
+                        <td>Construction</td>
+                        <td>Dam, bridge, tunnel, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>Semester 2</td>
+                        <td>Energy & Power</td>
+                        <td>1</td>
+                        <td>Electricity generation</td>
+                        <td>Energy-capturing device</td>
+                    </tr>
+                    <tr>
+                        <td>Semester 3</td>
+                        <td>Treatment</td>
+                        <td>6, 8</td>
+                        <td>Water/air treatment</td>
+                        <td>Physical, chemical, and/or biological treatment</td>
+                    </tr>
+                    <tr>
+                        <td>Semester 4</td>
+                        <td>Feedback & Sustainability</td>
+                        <td>5, 10, and 11</td>
+                        <td>Smart sustainable system</td>
+                        <td>Varies</td>
+                    </tr>
+                    <tr>
+                        <td>Semester 5</td>
+                        <td>Communication</td>
+                        <td>5</td>
+                        <td>ICT</td>
+                        <td>Varies</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="sec4">
+            <h2>Constructing and Testing a Prototype</h2>
+            <p>This is the third chapter (AKA Chapter III) in the Capstone Portfolio and the first half of the Capstone Exhibition Poster. In a general sense, it is about the prototype you built.</p>
+
+            <h3>Abstract</h3>
+            <p>The Abstract is a brief 150–250 words paragraph describing the work described in the poster. The Abstract must give the reader a clear understanding of the project without reading the entire poster. Tie the entire project together by summarizing the two or three main Grand Challenges, the Problem to Be Solved, chosen solution, Design Requirements, the prototype, Results, and Conclusions.</p>
+            <p>The Abstract includes (1) the purpose of the study, (2) a brief statement of what was done (without including minor details of the methods), (3) a brief statement of significant findings, and (4) major conclusions. The Abstract should generate excitement and desire to learn more about the topic; put great effort into writing it. Lastly, it does not include any visuals.</p>
+            <p>This part IS INCLUDED in the Capstone Exhibition Poster under the "Abstract" title but NOT INCLUDED in the Capstone Portfolio.</p>
+
+            <h3>Introduction</h3>
+            <p>In the 250–400 words Introduction paragraph, a connection is made between two or three main Grand Challenges, the semester's Capstone Challenge, the Problem to Be Solved, two prior solutions (mentioning their strengths and weakness), chosen solution (and how it was chosen), and the Design Requirements. The Introduction must include a figure that highlights/explains the significance or impact of the two or three main Grand Challenges or the Problem to Be Solved.</p>
+            <p>The Introduction should move clearly from a broad view of the Grand Challenges to an increasingly narrow focus on the team's chosen solution, Design Requirements, and prototype, justifying each choice (see the Funnel Technique). It should also provide smooth transitions from "what" choices were made to "why" they were made to the next section. At the end of the paragraph, you must transition to the next section, Materials and Methods, by mentioning that certain materials and methods were used to construct and test the prototype.</p>
+            <p>This part IS INCLUDED in the Capstone Exhibition Poster under the "Introduction" title but NOT INCLUDED in the Capstone Portfolio.</p>
+
+            <h3>Materials and Methods</h3>
+            <h4>What materials did you use to build the prototype?</h4>
+            <p>Add a table that contains the Item (as in the name), Quantity, Description, Usage, Cost, Source of Purchase, and Picture of all the items you have used in your prototype. Remember to add the correct measuring units in the Quantity column. Do not forget to add a caption to this table and mention it. This table is included in the Capstone Exhibition Poster; however, the table would only include the Item, Quantity, Description, and Usage of the items. Remember to check the Capstone Challenge to ensure the prototype does not exceed the maximum cost (varies).</p>
+
+            <h4>How did you construct this prototype using the materials mentioned above?</h4>
+            <p>This section is often referred to as the "Methods" section; however, both Materials and Methods are inseparable as sections but rather one section named Materials and Methods. Mention the "Materials" table (e.g., "As shown in Table N, the materials were used to…") and explain all the construction steps you took to build the prototype. Include Figures of the most crucial construction steps; that is why you should always document your construction using images and videos.</p>
+
+            <h4>List the safety precautions you took to ensure your team is being safe.</h4>
+            <p>Moving on from the construction steps, you should write a separate paragraph about all the safety precautions your team took to ensure safety and prevent danger. These precautions include but are not limited to wearing protective clothing. Mention all types of protective clothing you have used.</p>
+            <p>This part IS NOT INCLUDED in the Capstone Exhibition Poster.</p>
+
+            <h3>Test Plan</h3>
+            <h4>List the Design Requirements you have chosen to test with your prototype.</h4>
+            <p>This is considered a summary of the Design Requirements section in Chapter II's Solution and Design Requirements. Do not mention any justification or reasoning here.</p>
+            <p>This part IS INCLUDED in the Capstone Exhibition Poster.</p>
+
+            <h4>List the steps for each test plan on the prototype associated with each design requirement.</h4>
+            <p>This is the Test plan part; it is very similar to the beforementioned "construction steps." Explain all the steps you took to conduct the test plan. Like the construction steps, you should include figures of the most crucial test plan steps, so always document your test plan steps using images and videos. Address how the test plan addresses the beforementioned Design Requirements. During the Capstone Exhibition, you will be asked to show your test plan video and the images, so document your test plan(s).</p>
+            <p>This part (in addition to the Design Requirements part) IS INCLUDED in the Capstone Exhibition Poster; however, both the Test Plan and Design Requirements parts are parts under the "Materials and Methods" title.</p>
+        </section>
+
+        <section id="sec5">
+            <h2>Capstone Guidelines</h2>
+
+            <div class="grading-section " id="sec6">
+                <h3>Grading System</h3>
+                <p>Answers are evaluated based on a color-based grading system. Each answer is evaluated and given one of four colors: Red, Yellow, Green, and Blue.</p>
+
+                <h4>Red</h4>
+                <p>A Red score indicates that the response did not answer the prompt or that it did not display a correct understanding of the topic being addressed. A Red score is rare. Note that plagiarizing will result in getting a Red score.</p>
+
+                <h4>Yellow</h4>
+                <p>A Yellow score indicates that the response does not address every aspect of the prompt question. Questions have multiple parts, and all (not some) parts must be addressed. A Yellow score is uncommon.</p>
+
+                <h4>Green</h4>
+                <p>A Green score indicates that the response addresses every aspect of the prompt question. If all the parts of the prompt are answered accurately, a Green score is given. A Green score means that the response showed a very comprehensive and complete understanding of the topics in the prompt. A Green score is the most common.</p>
+
+                <h4>Blue</h4>
+                <p>A Blue score indicates that the response meets the Green criteria and demonstrates an even deeper understanding. It is the highest score; it is given when you "go above and beyond" by showing creativity and mentioning specific, accurate examples in your response. A Blue score is uncommon.</p>
+            </div>
+
+            <div class="rules" id="sec7">
+                <h3>Rules</h3>
+                <ul>
+                    <li>Students must take the Journal Assessment during a Capstone Session (that's typically on Monday or Wednesday).</li>
+                    <li>Students in the same grade at all schools must take the<!DOCTYPE html>
+                                            <li>Students in the same grade at all schools must take the Journal Assessment simultaneously.</li>
+                                            <li>Students shall not work in groups but rather individually.</li>
+                                            <li>Students shall not use the internet to look up information.</li>
+                                            <li>Students shall not use the Capstone Portfolio for information.</li>
+                                            <li>Students shall not use unauthorized prepared responses.</li>
+                                            <li>Students shall not use other students' answers.</li>
+                                            <li>Students shall not use AI-written answers or any work that's not their own. (Not an "official" rule but rather a de facto rule).</li>
+                                            <li>Students shall not purposefully allow other students to see or use their answers.</li>
+                                            <li>Students with an excused absence are allowed one Personal Journal Makeup.</li>
+                                            <li>Every student takes five Journal Assessments, and the lowest score is dropped.</li>
+                                    </ul>
+            </div>
+
+            <div class="tips" id="sec8">
+                <h2>Tips</h2>
+                <ul>
+                    <li>Although it is acceptable to only write 150 words, I personally advise you to write 200–250 words in each answer. This is because, unfortunately, quantity matters more than quality in some circumstances, and the Journal Assessment is oftentimes such a circumstance.</li>
+                    <li>When answering Personal Reflection or Team Collaboration questions, your response should be about what you (singular) think and feel rather than the entire team. Avoid saying "we" or "us." Keep the answer about yourself.</li>
+                    <li>Divide your answer into a brief introduction, detailed body paragraph, and summary conclusion. Ensure the main points you want to get across are noticeable.</li>
+                    <li>Do not spend much of your time fixing grammar and punctuation mistakes. Poorly-written, great, unique ideas will score higher than perfectly-written generic, bad ideas.</li>
+                    <li>Use examples that help the reader understand your statements. This is super important.</li>
+                    <li>Use equations when answering Learning Transfer prompt. There is at least one equation that is relevant 90% of the time. You can be sure there's a certain equation in their rubric. They will try to find it. If they do, you're good. If they don't, you're cooked.</li>
+                    <li>The teacher who is going to assess your response is not an engineer or scientist. Do not assume that they will have a complete understanding of the EDP or literally any scientific concept you are using in your Capstone Project. You might imagine that a chemistry teacher would not need detailed explanations in your answer to a chemistry-related Learning Transfer, and that is true. However, any evaluator grades anyone's three (or four) answers at once, even if an Learning Transfer question is unrelated to their subject. For example, a CS teacher can and will grade your answer to a chemistry-related Learning Transfer question, so ensure your answer is understandable by any teacher that teaches a completely unrelated subject.</li>
+                </ul>
+            </div>
+
+            <div class="closing">
+                <p>I hope this helps you. Because the Capstone Project is ever changing, please email me with updates (if possible). Use an email title like "Capstone Project Guide – Updates" or "Capstone Project Guide – Critiques" so that I can find it quicker.</p>
+
+                <p>On a side note, if you're interested in online privacy and security, consider reading this other guide of mine.</p>
+
+                <p>Ace the Capstone,<br>
+                Hazem Moghni<br>
+                STEM School Graduate Who Cares</p>
+            </div>
+        </section>
+    </main>
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4 align-items-center">
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/yassinbassem/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.youtube.com/@yassinbassemf"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="mailto:yassin.1922059@stemgharbiya.moe.edu.eg" style="font-weight: 900;">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.youtube.com/@yassinbassemf"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+                  <a class="btn btn-light btn-social" href="https://wa.me/201229897627" style="font-weight: 900;">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                  </a>
+
+            </div>
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="https://www.linkedin.com/in/yassinbassem/">Yassin Bassem</a>. All Rights Reserved.</a>
+            </p>
+        </div>
+    </div>
+                        <!-- JavaScript Libraries -->
+                        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+                        <script src="lib/typed/typed.min.js"></script>
+                        <script src="lib/easing/easing.min.js"></script>
+                        <script src="lib/waypoints/waypoints.min.js"></script>
+                        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+                        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+                        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+                        <!-- Contact Javascript File -->
+                        <script src="mail/jqBootstrapValidation.min.js"></script>
+                        <script src="mail/contact.js"></script>
+
+                        <script src="https://kit.fontawesome.com/2c5a093185.js" crossorigin="anonymous"></script>
+                        <!-- Template Javascript -->
+                        <script src="js/main.js"></script>
+    <script>    $('.navbar').css('display', 'flex');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Archive -Yassin Bassem</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/site_logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    body {
+        min-height: 100vh;
+        background: linear-gradient(to bottom, #f9fafb, #f3f4f6);
+    }
+
+    .archive-container {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 3rem 1rem;
+    }
+
+    .hero {
+        position: relative;
+        height: 18rem;
+        border-radius: 0.75rem;
+        overflow: hidden;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
+
+    .hero h1 {
+        color: white;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to right, rgba(37, 99, 235, 0.8), rgba(147, 51, 234, 0.8));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-content {
+        color: white;
+        padding: 0 1rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.125rem;
+        max-width: 36rem;
+        margin: 0 auto;
+    }
+
+    .papers {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .paper {
+        background: white;
+        border-radius: 0.75rem;
+        overflow: hidden;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        transition: transform 0.4s ease;
+    }
+
+    .paper:hover {
+        transform: translateY(-2px);
+    }
+
+    .paper-header {
+        padding: 2rem;
+        border-bottom: 1px solid #e5e7eb;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .paper-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #111827;
+        line-height: 1.3;
+        margin-right: 1rem;
+    }
+
+    .paper-year {
+        background: #e0e7ff;
+        color: #4f46e5;
+        padding: 0.25rem 1rem;
+        border-radius: 9999px;
+        font-size: 0.875rem;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    .accordion-section {
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .accordion-section:last-child {
+        border-bottom: none;
+    }
+
+    .accordion-button {
+        width: 100%;
+        padding: 1.25rem 1.5rem;
+        text-align: left;
+        background: none;
+        border: none;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #374151;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background-color 0.3s ease;
+    }
+
+    .accordion-button:hover {
+        background-color: #f9fafb;
+    }
+
+    .accordion-button::after {
+        content: "▼";
+        font-size: 0.75rem;
+        /* Slower, smoother rotation for expand/collapse indicator */
+        transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        /* Slower, smoother expansion/collapse with proper easing */
+        /* transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                    padding-bottom 0.5s cubic-bezier(0.4, 0, 0.2, 1); */
+        padding: 0 1.5rem;
+    }
+
+    .accordion-section.active .accordion-button::after {
+        transform: rotate(180deg);
+    }
+
+    .accordion-section.active .accordion-content {
+        /* max-height: 500px; */
+        padding-bottom: 1.5rem;
+    }
+
+    .accordion-content p {
+        color: #4b5563;
+        line-height: 1.6;
+    }
+    .accordion-content .accordion-content {
+    padding: 0 1rem;
+}
+
+.accordion-section.active .accordion-button::after {
+    transform: rotate(180deg);
+}
+
+.accordion-section.active > .accordion-content {
+    /* max-height: 2000px; Increased to accommodate nested content */
+    padding-bottom: 1.5rem;
+}
+
+.accordion-content p {
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s cubic-bezier(0.4, 0, 0.2, 1),
+                padding-bottom 1s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0 1.5rem;
+}
+
+/* Important: Reset max-height for nested accordion content */
+.accordion-content .accordion-content {
+    max-height: 0;
+    padding: 0 1rem;
+    transition: max-height 1s cubic-bezier(0.4, 0, 0.2, 1),
+                padding-bottom 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Ensure nested accordions can be toggled independently */
+.accordion-section.active > .accordion-content {
+    max-height: 2000px;
+    padding-bottom: 1.5rem;
+}
+
+/* Ensure nested accordions start collapsed even when parent is open */
+.accordion-section.active .accordion-section:not(.active) > .accordion-content {
+    max-height: 0;
+    padding-bottom: 0;
+}
+
+/* Style adjustments for nested accordions */
+.accordion-content .accordion-section {
+    margin-left: 1.5rem;
+    border-left: 2px solid #e5e7eb;
+    border-bottom: none;
+}
+
+/* Adjust spacing for nested content */
+.accordion-content .accordion-button {
+    padding: 1rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.accordion-content p {
+    margin-bottom: 1rem;
+}
+.accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1s cubic-bezier(0.4, 0, 0.2, 1);
+            padding: 0 1.5rem;
+        }
+
+        .accordion-section.active > .accordion-content {
+            max-height: 2000px;
+            padding-bottom: 1.5rem;
+        }
+        .accordion-button {
+    width: 100%;
+    padding: 1.25rem 1.5rem;
+    text-align: left;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #374151;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button::after {
+    content: "▼";
+    font-size: 0.75rem;
+    transition: transform 0.4s ease;
+}
+
+.accordion-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition:
+        max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.4s ease;
+    padding: 0 1.5rem;
+}
+
+/* Nested accordion specific styles */
+.accordion-content .accordion-section {
+    margin-left: 1.5rem;
+    border-left: 2px solid #e5e7eb;
+}
+
+.accordion-section.active > .accordion-content {
+    opacity: 1;
+    padding-bottom: 1.5rem;
+}
+
+/* For deeper nested accordions, adjust max-height accordingly */
+.accordion-content .accordion-section.active > .accordion-content {
+    /* max-height: 200px; */
+}
+
+/* If you need larger heights for specific sections, add custom classes */
+.accordion-section.large-content.active > .accordion-content {
+    /* max-height: 600px; */
+}
+    </style>
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51" style="">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logo3.png" alt="Logo" class="logo" >
+                <!-- <h1 class="m-0 text-2xl font-bold"><span style="color: #0984e3">Free</span>Folio</h1> -->
+            </a>
+            <div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i> <!-- Menu icon -->
+                </button>
+
+
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-link ">Home</a>
+                        <a href="hazemmoghni.com/about/about.html" class="nav-link ">About</a>
+                        <!-- <a href="#Quality" class="nav-link">Quality</a> -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="guideDropdown" data-toggle="dropdown" aria-expanded="false">
+                                Guides
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="guideDropdown">
+                                <li><a href="IRIS.html" class="dropdown-item">IRIS Guide</a></li>
+                                <li><a href="capestone.html" class="dropdown-item">STEM Capstone Guide</a></li>
+                            </ul>
+                        </div>
+                        <a href="archive.html" class="nav-link active">Archive</a>
+
+                    </div>
+                    <div class="container" style="">
+                        <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/yassinbassem/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-light btn-social mr-2" href="mailto:yassin.1922059@stemgharbiya.moe.edu.eg"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        <a class="btn btn-light btn-social mr-2" href="https://www.youtube.com/@yassinbassemf"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Navbar End -->
+
+
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <img src="img/archive.jpg" alt="Archive Hero">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1 class="hero-title">Research Archive</h1>
+                    <p class="hero-subtitle">Explore our collection of cutting-edge research papers in technology and healthcare</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Papers Section -->
+        <div class="papers">
+            <!-- Paper 1 -->
+            <div class="paper">
+                <div class="paper-header">
+                    <h3 class="paper-title">Globalizing Continuous Glucose Monitoring Systems: A Paradigm Shift from Traditional Self-Monitoring Blood Glucose Devices</h3>
+                    <span class="paper-year">Aug 2023</span>
+                </div>
+
+                <!-- Main accordion section -->
+                <div class="accordion-section">
+                    <button class="accordion-button">Context</button>
+                    <div class="accordion-content">
+                        <p>This research paper, authored by Yassin Bassem, investigates the revolutionary impact of <a href="https://en.wikipedia.org/wiki/Continuous_glucose_monitoring" target="_blank">continuous glucose monitoring (CGM)</a> systems on diabetes management. CGMs represent a technological leap from traditional <a href="https://en.wikipedia.org/wiki/Self-monitoring_of_blood_glucose" target="_blank">self-monitoring blood glucose (SMBG)</a> devices, offering real-time glucose monitoring and predictive insights. The study emphasizes the global scalability of CGM technologies, focusing on accessibility in low- and middle-income countries (LMICs). By leveraging advancements in <a href="https://en.wikipedia.org/wiki/Wearable_technology" target="_blank">wearable technology</a> and <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank">artificial intelligence</a>, CGMs have the potential to revolutionize diabetes care and enhance global health equity.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-section">
+                    <button class="accordion-button">What is this research about?</button>
+                    <div class="accordion-content">
+                        <p>Diabetes is a chronic condition affecting millions globally. This research explores the transformative role of <a href="https://en.wikipedia.org/wiki/Continuous_glucose_monitoring" target="_blank">Continuous Glucose Monitoring (CGM)</a> systems as superior alternatives to <a href="https://en.wikipedia.org/wiki/Self-monitoring_of_blood_glucose" target="_blank">Self-Monitoring Blood Glucose (SMBG)</a> devices. SMBG relies on intermittent fingerstick testing, which limits its ability to provide real-time insights or track glucose trends effectively. CGM systems overcome these limitations by continuously measuring glucose levels in the interstitial fluid through subcutaneous sensors, transmitting real-time data to smartphones or receivers.</p>
+
+                        <p>The paper evaluates key challenges, such as high costs and technological barriers, especially in <a href="https://en.wikipedia.org/wiki/Low-_and_middle-income_countries" target="_blank">LMICs</a>. It highlights the integration of CGMs with <a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank">machine learning</a> for predictive analytics and explores how global collaborations can drive accessibility. The study argues for targeted subsidies, cost reduction strategies, and public-private partnerships to scale CGM adoption globally, improving glycemic control and reducing diabetes-related complications.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-section">
+                    <button class="accordion-button">Results</button>
+                    <div class="accordion-content">
+                        <p>The research revealed that CGMs significantly outperformed SMBGs in critical metrics:</p>
+                        <ul>
+                            <li><strong>Improved Glycemic Control:</strong> Studies demonstrated a 0.25%–0.31% reduction in HbA1c levels with CGMs compared to SMBGs, highlighting their efficacy in managing diabetes.</li>
+                            <li><strong>Enhanced Detection:</strong> CGMs detected 9% more cases of nocturnal <a href="https://en.wikipedia.org/wiki/Hypoglycemia" target="_blank">hypoglycemia</a>, a critical benefit for preventing severe complications.</li>
+                            <li><strong>Cost-Effectiveness:</strong> Although CGMs have higher upfront costs, they offer long-term savings by reducing hospitalizations and improving quality-adjusted life years (QALYs).</li>
+                        </ul>
+
+                        <p>Case studies in LMICs showed that locally manufactured and subsidized CGMs improved adoption rates by 15%. The integration of <a href="https://en.wikipedia.org/wiki/Artificial_pancreas" target="_blank">hybrid closed-loop systems</a> demonstrated additional benefits, automating insulin delivery and enhancing patient outcomes.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-section">
+                    <button class="accordion-button">Writing</button>
+                    <div class="accordion-content">
+                        <p>You can find the full paper here: <a href="https://jmp.sh/ZhheptrQ" target="_blank">[LINK]</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-header">
+                    <h3 class="paper-title">The Silent Struggle: Traumatic Brain Injury Unveiled - Advances in Diagnosis, Treatment Strategies, and Long-Term Outcomes</h3>
+                    <span class="paper-year">July 2024</span>
+                </div>
+
+                <!-- Main accordion section -->
+                <div class="accordion-section">
+                    <button class="accordion-button">Context</button>
+                    <div class="accordion-content">
+                        <p>This research paper, authored by Yassin Bassem and Jana Ahmed, explores the multifaceted challenges of <a href="https://en.wikipedia.org/wiki/Traumatic_brain_injury" target="_blank">traumatic brain injury (TBI)</a>. Underpinned by extensive studies and clinical data, it delves into the epidemiology, pathophysiology, and global impact of TBIs, emphasizing their prevalence in young adults and high-risk populations such as athletes and military personnel. The mentorship of leading neuroscientists guided this research, addressing critical gaps in diagnostic tools and treatment pathways. A primary focus is on the molecular mechanisms underlying TBI, including diffuse axonal injury and neuroinflammatory responses, contributing to advancements in both acute care and long-term rehabilitation strategies.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-section">
+                    <button class="accordion-button">What is this research about?</button>
+                    <div class="accordion-content">
+                        <p>Traumatic brain injury (TBI) is a leading cause of death and disability worldwide, primarily resulting from external mechanical forces like rapid acceleration, deceleration, or blast waves. This research examines the biophysical and neuropathological mechanisms of TBIs, including the impact of rotational and linear forces on brain structures. It evaluates innovative diagnostic methods such as <a href="https://en.wikipedia.org/wiki/Diffusion_tensor_imaging" target="_blank">diffusion tensor imaging (DTI)</a> and biomarkers like <a href="https://en.wikipedia.org/wiki/Neurofilament_light" target="_blank">neurofilament light (NF-L)</a> to enhance early detection.</p>
+
+                        <p>Key areas of exploration include the role of axonal injury in cognitive and behavioral deficits, the progression of chronic traumatic encephalopathy (<a href="https://en.wikipedia.org/wiki/Chronic_traumatic_encephalopathy" target="_blank">CTE</a>), and the long-term implications of repeated mild TBIs. By integrating case studies and clinical trials, this paper highlights cutting-edge treatment approaches, from surgical interventions for hematomas to non-invasive techniques like <a href="https://en.wikipedia.org/wiki/Neurofeedback" target="_blank">EEG-based neurofeedback</a>.</p>
+
+                        <p>The study’s ultimate goal is to bridge the gap between acute management and comprehensive rehabilitation, paving the way for personalized medicine and improving quality of life for TBI survivors.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-section">
+                    <button class="accordion-button">Results</button>
+                    <div class="accordion-content">
+                        <p>The findings underscore the pivotal role of advanced imaging techniques and biomarkers in diagnosing and managing TBIs. For instance, <a href="https://en.wikipedia.org/wiki/Diffusion_tensor_imaging" target="_blank">diffusion tensor imaging (DTI)</a> successfully identified axonal injuries that conventional MRI missed, providing critical insights into the extent of neural damage. Biomarkers like NF-L and tau proteins demonstrated their potential in monitoring injury severity and predicting recovery trajectories.</p>
+
+                        <p>Case studies revealed that integrating surgical and non-surgical interventions significantly improved patient outcomes. Innovations in neurofeedback and metabolic imaging showcased their efficacy in addressing cognitive deficits and enhancing neural plasticity. Moreover, the research highlighted the socioeconomic impact of TBIs, advocating for accessible diagnostic tools and rehabilitation programs tailored to diverse populations.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-section">
+                    <button class="accordion-button">Writing</button>
+                    <div class="accordion-content">
+                        <p>You can find it here: <a href="https://jmp.sh/mwTSZkXS" target="_blank">[LINK]</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="paper">
+                <div class="paper-header">
+                    <h3 class="paper-title">Donor Connect: Bridging the Gap in Blood Donation through Innovation</h3>
+                    <span class="paper-year">March 2023</span>
+                </div>
+
+                <!-- Main accordion section -->
+                <div class="accordion-section">
+                    <button class="accordion-button">What is Donor Connect?</button>
+                    <div class="accordion-content">
+                        <p>Donor Connect is a groundbreaking initiative designed to tackle the critical shortage of blood donations. This platform leverages modern technology to connect blood donors with recipients and hospitals, facilitating the process of blood donation and collection. It integrates GPS, gamification, and user-friendly interfaces to create a seamless and engaging experience for users. The project emphasizes increasing awareness about the importance of blood donation and simplifying the logistics involved.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-section">
+                    <button class="accordion-button">Challenges</button>
+                    <div class="accordion-content">
+                        <p>The main challenges addressed by Donor Connect include the reluctance of individuals to donate blood due to misinformation or lack of awareness, the logistical difficulties in matching donors with recipients, and the time-sensitive nature of blood transfusions. Furthermore, the platform seeks to overcome infrastructural constraints in underdeveloped areas by providing a digital solution that minimizes manual intervention.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-section">
+                    <button class="accordion-button">Impact</button>
+                    <div class="accordion-content">
+                        <p>Donor Connect has the potential to revolutionize the blood donation landscape. By creating a centralized and accessible system, it improves donor engagement, increases the availability of blood supplies, and reduces the risk of critical shortages. The integration of gamification incentivizes regular donations, while real-time updates ensure efficient management of blood inventory. Ultimately, the platform saves lives by addressing a long-standing healthcare challenge.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4 align-items-center">
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/yassinbassem/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.youtube.com/@yassinbassemf"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="mailto:yassin.1922059@stemgharbiya.moe.edu.eg" style="font-weight: 900;">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.youtube.com/@yassinbassemf"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+                  <a class="btn btn-light btn-social" href="https://wa.me/201229897627" style="font-weight: 900;">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                  </a>
+
+            </div>
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="https://www.linkedin.com/in/yassinbassem/">Yassin Bassem</a>. All Rights Reserved.</a>
+            </p>
+        </div>
+    </div>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <script src="https://kit.fontawesome.com/2c5a093185.js" crossorigin="anonymous"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.accordion-button');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            const section = this.parentElement;
+
+            // If this is a nested accordion, handle separately
+            if (section.closest('.accordion-content')) {
+                section.classList.toggle('active');
+            } else {
+                // For parent accordions
+                section.classList.toggle('active');
+            }
+        });
+    });
+});
+    </script>
+</body>
+<script>    $('.`bar').css('display', 'flex');
+</script>
+</html>
